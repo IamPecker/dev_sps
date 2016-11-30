@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_6" inherit-compiler-output="false">
+    <output url="file://$MODULE_DIR$/target/classes" />
+    <output-test url="file://$MODULE_DIR$/target/test-classes" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: org.n52.sensorweb:52n-xml-sps-v20:1.1.4" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.xmlbeans:xmlbeans:2.5.0" level="project" />
+    <orderEntry type="library" name="Maven: stax:stax-api:1.0.1" level="project" />
+    <orderEntry type="library" name="Maven: org.n52.sensorweb:52n-xml-sweCommon-v20:1.1.4" level="project" />
+    <orderEntry type="library" name="Maven: org.n52.sensorweb:52n-xml-xlink-v110:1.1.4" level="project" />
+    <orderEntry type="library" name="Maven: org.n52.sensorweb:52n-xml-swes-v20:1.1.4" level="project" />
+    <orderEntry type="library" name="Maven: org.n52.sensorweb:52n-xml-gml-v321:1.1.4" level="project" />
+    <orderEntry type="library" name="Maven: org.n52.sensorweb:52n-xml-wsa-v10:1.1.4" level="project" />
+    <orderEntry type="library" name="Maven: org.n52.sensorweb:52n-xml-wsn-v13:1.1.4" level="project" />
+    <orderEntry type="library" name="Maven: org.n52.sensorweb:52n-xml-wsrf-v12:1.1.4" level="project" />
+    <orderEntry type="module" module-name="52n-sps-api" />
+    <orderEntry type="module" module-name="52n-sps-api-xml" />
+    <orderEntry type="library" name="Maven: org.n52.sensorweb:52n-oxf-xmlbeans:1.12" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.xmlbeans:xmlbeans-xpath:2.3.0" level="project" />
+    <orderEntry type="library" name="Maven: net.sf.saxon:saxon:8.7" level="project" />
+    <orderEntry type="library" name="Maven: xerces:xercesImpl:2.9.1" level="project" />
+    <orderEntry type="library" name="Maven: xml-apis:xml-apis:1.3.04" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpclient:4.1.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpcore:4.1" level="project" />
+    <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.4" level="project" />
+    <orderEntry type="library" name="Maven: joda-time:joda-time:2.1" level="project" />
+    <orderEntry type="library" name="Maven: org.n52.sensorweb:52n-oxf-ows-v110:1.12" level="project" />
+    <orderEntry type="library" name="Maven: org.n52.sensorweb:52n-xml-ows-v110:1.1.1" level="project" />
+    <orderEntry type="library" name="Maven: org.n52.sensorweb:52n-oxf-swes-v20:1.12" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: junit:junit:4.9" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: org.hamcrest:hamcrest-core:1.1" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.6.4" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: org.slf4j:jcl-over-slf4j:1.6.4" level="project" />
+    <orderEntry type="library" name="Maven: ch.qos.logback:logback-classic:1.0.0" level="project" />
+    <orderEntry type="library" name="Maven: ch.qos.logback:logback-core:1.0.0" level="project" />
+  </component>
+</module>
