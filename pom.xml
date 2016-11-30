@@ -391,7 +391,7 @@
 					<header>misc/52N_license-header.txt</header>
 					<properties>
 						<inceptionYear>${project.inceptionYear}</inceptionYear>
-						<latestYearOfContribution>${currentYear}</latestYearOfContribution>
+						<!--<latestYearOfContribution>${currentYear}</latestYearOfContribution>-->
 						<!-- <latestYearOfContribution>${currentYearDynamic}</latestYearOfContribution> -->
 					</properties>
 					<aggregate>true</aggregate>
@@ -473,9 +473,8 @@
 			</plugin>
 
 		</plugins>
-
+		<defaultGoal>compile</defaultGoal>
 	</build>
-
 	<repositories>
 		<repository>
 			<id>n52-releases</id>
@@ -521,7 +520,7 @@
 				<sps.external.dcp.operation.url>${sps.external.base.url}/sps</sps.external.dcp.operation.url>
 				<sps.external.admin.extension.url>${sps.external.base.url}/admin</sps.external.admin.extension.url>
 
-				<config.logger.fileappender.filepath>${catalina.base:-.}/logs</config.logger.fileappender.filepath>
+<!--				<config.logger.fileappender.filepath>${catalina.base:-.}/logs</config.logger.fileappender.filepath>-->
 				<config.logger.level>DEBUG</config.logger.level>
 				<config.logger.consoleappender.level>DEBUG</config.logger.consoleappender.level>
 				<config.logger.fileappender.level>WARN</config.logger.fileappender.level>

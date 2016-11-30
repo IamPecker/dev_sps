@@ -11,29 +11,35 @@
             <element id="module-output" name="52n-sps-core" />
           </element>
           <element id="library" level="project" name="Maven: org.n52.sensorweb:52n-xml-sps-v20:1.1.4" />
+          <element id="library" level="project" name="Maven: org.apache.xmlbeans:xmlbeans:2.3.0" />
           <element id="library" level="project" name="Maven: org.n52.sensorweb:52n-xml-sweCommon-v20:1.1.4" />
           <element id="library" level="project" name="Maven: org.n52.sensorweb:52n-xml-xlink-v110:1.1.4" />
           <element id="library" level="project" name="Maven: org.n52.sensorweb:52n-xml-swes-v20:1.1.4" />
           <element id="library" level="project" name="Maven: org.n52.sensorweb:52n-xml-gml-v321:1.1.4" />
+          <element id="library" level="project" name="Maven: org.n52.sensorweb:52n-xml-ows-v110:1.1.1" />
           <element id="library" level="project" name="Maven: org.n52.sensorweb:52n-xml-wsa-v10:1.1.4" />
           <element id="library" level="project" name="Maven: org.n52.sensorweb:52n-xml-wsn-v13:1.1.4" />
           <element id="library" level="project" name="Maven: org.n52.sensorweb:52n-xml-wsrf-v12:1.1.4" />
           <element id="archive" name="52n-sps-api-2.0.2-SNAPSHOT.jar">
             <element id="module-output" name="52n-sps-api" />
           </element>
-          <element id="library" level="project" name="Maven: org.n52.sensorweb:52n-oxf-ows-v110:1.12" />
-          <element id="library" level="project" name="Maven: org.n52.sensorweb:52n-xml-ows-v110:1.1.1" />
-          <element id="library" level="project" name="Maven: org.n52.sensorweb:52n-oxf-swes-v20:1.12" />
           <element id="archive" name="52n-sps-api-xml-2.0.2-SNAPSHOT.jar">
             <element id="module-output" name="52n-sps-api-xml" />
           </element>
+          <element id="library" level="project" name="Maven: org.n52.sensorweb:52n-oxf-ows-v110:1.12" />
+          <element id="library" level="project" name="Maven: org.n52.sensorweb:52n-oxf-swes-v20:1.12" />
+          <element id="library" level="project" name="Maven: org.n52.sensorweb:52n-oxf-xmlbeans:1.12" />
           <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpclient:4.1.1" />
+          <element id="library" level="project" name="Maven: joda-time:joda-time:2.1" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.6.4" />
+          <element id="library" level="project" name="Maven: org.slf4j:jcl-over-slf4j:1.6.4" />
+          <element id="library" level="project" name="Maven: ch.qos.logback:logback-classic:1.0.0" />
           <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpcore:4.1" />
           <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.4" />
-          <element id="library" level="project" name="Maven: joda-time:joda-time:2.1" />
           <element id="archive" name="52n-sps-admin-2.0.2-SNAPSHOT.jar">
             <element id="module-output" name="52n-sps-admin" />
           </element>
+          <element id="library" level="project" name="Maven: org.springframework:spring-oxm:3.2.0.RELEASE" />
           <element id="archive" name="52n-sps-rest-2.0.2-SNAPSHOT.jar">
             <element id="module-output" name="52n-sps-rest" />
           </element>
@@ -41,8 +47,10 @@
             <element id="module-output" name="52n-sps-hibernate" />
           </element>
           <element id="library" level="project" name="Maven: org.springframework:spring-orm:3.2.0.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-core:3.2.0.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:3.2.0.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-tx:3.2.0.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-beans:3.2.0.RELEASE" />
           <element id="library" level="project" name="Maven: aopalliance:aopalliance:1.0" />
           <element id="library" level="project" name="Maven: org.hibernate:hibernate-core:3.6.10.Final" />
           <element id="library" level="project" name="Maven: antlr:antlr:2.7.6" />
@@ -51,8 +59,6 @@
           <element id="library" level="project" name="Maven: org.hibernate:hibernate-commons-annotations:3.2.0.Final" />
           <element id="library" level="project" name="Maven: org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.1.Final" />
           <element id="library" level="project" name="Maven: javax.transaction:jta:1.1" />
-          <element id="library" level="project" name="Maven: org.n52.sensorweb:52n-oxf-xmlbeans:1.12" />
-          <element id="library" level="project" name="Maven: org.apache.xmlbeans:xmlbeans:2.3.0" />
           <element id="library" level="project" name="Maven: stax:stax-api:1.0.1" />
           <element id="library" level="project" name="Maven: org.apache.xmlbeans:xmlbeans-xpath:2.3.0" />
           <element id="library" level="project" name="Maven: net.sf.saxon:saxon:8.7" />
@@ -66,23 +72,17 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:3.2.0.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-context:3.2.0.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-aop:3.2.0.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-core:3.2.0.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-web:3.2.0.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-expression:3.2.0.RELEASE" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-beans:3.2.0.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-web:3.2.0.RELEASE" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.2.2" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.2.2" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.2.2" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.module:jackson-module-jsonSchema:2.2.2" />
-          <element id="library" level="project" name="Maven: org.springframework:spring-oxm:3.2.0.RELEASE" />
           <element id="library" level="project" name="Maven: commons-lang:commons-lang:2.5" />
           <element id="library" level="project" name="Maven: org.aspectj:aspectjweaver:1.6.12" />
           <element id="library" level="project" name="Maven: c3p0:c3p0:0.9.1.2" />
           <element id="library" level="project" name="Maven: net.sf.ehcache:ehcache:1.6.2" />
           <element id="library" level="project" name="Maven: javassist:javassist:3.9.0.GA" />
-          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.6.4" />
-          <element id="library" level="project" name="Maven: org.slf4j:jcl-over-slf4j:1.6.4" />
-          <element id="library" level="project" name="Maven: ch.qos.logback:logback-classic:1.0.0" />
           <element id="library" level="project" name="Maven: ch.qos.logback:logback-core:1.0.0" />
         </element>
       </element>

@@ -18,12 +18,15 @@
     <orderEntry type="library" name="Maven: org.n52.sensorweb:52n-xml-xlink-v110:1.1.4" level="project" />
     <orderEntry type="library" name="Maven: org.n52.sensorweb:52n-xml-swes-v20:1.1.4" level="project" />
     <orderEntry type="library" name="Maven: org.n52.sensorweb:52n-xml-gml-v321:1.1.4" level="project" />
+    <orderEntry type="library" name="Maven: org.n52.sensorweb:52n-xml-ows-v110:1.1.1" level="project" />
     <orderEntry type="library" name="Maven: org.n52.sensorweb:52n-xml-wsa-v10:1.1.4" level="project" />
     <orderEntry type="library" name="Maven: org.n52.sensorweb:52n-xml-wsn-v13:1.1.4" level="project" />
     <orderEntry type="library" name="Maven: org.n52.sensorweb:52n-xml-wsrf-v12:1.1.4" level="project" />
     <orderEntry type="module" module-name="52n-sps-api-xml" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.6.4" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: org.slf4j:jcl-over-slf4j:1.6.4" level="project" />
+    <orderEntry type="library" name="Maven: ch.qos.logback:logback-classic:1.0.0" level="project" />
     <orderEntry type="library" name="Maven: org.n52.sensorweb:52n-oxf-ows-v110:1.12" level="project" />
-    <orderEntry type="library" name="Maven: org.n52.sensorweb:52n-xml-ows-v110:1.1.1" level="project" />
     <orderEntry type="library" name="Maven: org.n52.sensorweb:52n-oxf-swes-v20:1.12" level="project" />
     <orderEntry type="library" name="Maven: org.n52.sensorweb:52n-oxf-xmlbeans:1.12" level="project" />
     <orderEntry type="library" name="Maven: org.apache.xmlbeans:xmlbeans-xpath:2.3.0" level="project" />
@@ -42,9 +45,6 @@
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.springframework:spring-beans:3.2.0.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: junit:junit:4.9" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.hamcrest:hamcrest-core:1.1" level="project" />
-    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.6.4" level="project" />
-    <orderEntry type="library" scope="RUNTIME" name="Maven: org.slf4j:jcl-over-slf4j:1.6.4" level="project" />
-    <orderEntry type="library" name="Maven: ch.qos.logback:logback-classic:1.0.0" level="project" />
     <orderEntry type="library" name="Maven: ch.qos.logback:logback-core:1.0.0" level="project" />
   </component>
 </module>

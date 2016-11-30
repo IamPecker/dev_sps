@@ -123,5 +123,6 @@
 				<artifactId>svn-revision-number-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+		<defaultGoal>compile</defaultGoal>
 	</build>
 </project>
