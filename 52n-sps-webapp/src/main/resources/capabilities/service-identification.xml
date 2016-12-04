@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ows:ServiceIdentification xmlns:ows="http://www.opengis.net/ows/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/ows/1.1 http://schemas.opengis.net/ows/1.1.0/owsServiceIdentification.xsd">
-	<ows:Title xml:lang="en">52north SPS 2.0 reference implementation</ows:Title>
+	<ows:Title xml:lang="en">SPS 2.0 implementation</ows:Title>
 	<ows:Abstract xml:lang="en">short abstract</ows:Abstract>
 	<ows:Abstract>another abstract</ows:Abstract>
 	<ows:Keywords>
@@ -11,11 +11,6 @@
 	</ows:Keywords>
 	<ows:ServiceType>SPS</ows:ServiceType>
 	<ows:ServiceTypeVersion>2.0.0</ows:ServiceTypeVersion>
-	<!--
-	will be set dynamically via capabilities interception
-	<ows:Profile>http://www.opengis.net/spec/SWES/2.0/conf/Core</ows:Profile>
-	<ows:Profile>http://www.opengis.net/spec/SWES/2.0/conf/SensorProvider</ows:Profile>
-	-->
 	<ows:Fees>none</ows:Fees>
 	<ows:AccessConstraints>none</ows:AccessConstraints>
 </ows:ServiceIdentification>

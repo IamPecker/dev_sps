@@ -516,8 +516,8 @@
 				<!-- EXAMPLE CONFIG PROPERTIES FOLLOW. TO SEPARATE CONFIGURATION FROM 
 					PROJECT, COPY build-example.properties to ${user.home}/build.properties CUSTOMIZE 
 					PROPERTIES AND TRIGGER MAVEN BUILD WITH `mvn install -Denv=dev'. -->
-				<sps.external.base.url>http://localhost:8080/${sps.webapp.name}/</sps.external.base.url>
-				<sps.external.dcp.operation.url>${sps.external.base.url}/sps</sps.external.dcp.operation.url>
+				<sps.external.base.url>http://localhost:8080/sps</sps.external.base.url>
+				<sps.external.dcp.operation.url>http://localhost:8080/sps/sps</sps.external.dcp.operation.url>
 				<sps.external.admin.extension.url>${sps.external.base.url}/admin</sps.external.admin.extension.url>
 
 <!--				<config.logger.fileappender.filepath>${catalina.base:-.}/logs</config.logger.fileappender.filepath>-->

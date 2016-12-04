@@ -13,7 +13,7 @@
 		<constructor-arg name="service" ref="service" />
 		<constructor-arg name="httpBinding">
 			<bean id="xmlBinding" class="org.n52.ows.service.binding.HttpBinding">
-				<property name="externalDcpUrl" value="${sps.external.dcp.operation.url}" />
+				<property name="externalDcpUrl" value="http://localhost:8080/sps/sps" />
 				<property name="httpMethod" value="POST" />
 			</bean>
 		</constructor-arg>

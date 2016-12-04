@@ -132,15 +132,15 @@ public class XmlController extends ServiceController {
         return new XmlValidationDelegate(plainDelegate);
     }
 
+    public void destroy() throws Exception {
+        // TODO Auto-generated method stub
+
+    }
+
     private XmlObject parseIncomingXmlObject(InputStream payload) throws XmlException, IOException {
         // @see https://issues.apache.org/jira/browse/XMLBEANS-226
         // @see http://commons.apache.org/io/api-release/org/apache/commons/io/input/AutoCloseInputStream.html
         return XmlObject.Factory.parse(new AutoCloseInputStream(payload));
-    }
-
-    public void destroy() throws Exception {
-        // TODO Auto-generated method stub
-        
     }
 
 }

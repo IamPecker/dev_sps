@@ -4,9 +4,6 @@
 	
 	<swes:procedureDescriptionFormat>http://www.opengis.net/sensorML/1.0.1</swes:procedureDescriptionFormat>
     <swes:observableProperty>http://www.opengis.net/def/propertyType/x-radiance</swes:observableProperty>
-	
-	<!-- CONTENTS DYNAMICALLY ADDED VIA ADMIN INTERFACE -->
-	 
 	<sps:minStatusTime>PT1H</sps:minStatusTime>
 	<sps:supportedEncoding>http://www.opengis.net/swe/2.0/TextEncoding</sps:supportedEncoding>
 
