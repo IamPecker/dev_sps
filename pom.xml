@@ -527,7 +527,7 @@
 
 				<org.n52.database.username>postgres</org.n52.database.username>
 				<org.n52.database.password>postgres</org.n52.database.password>
-				<org.n52.hibernate.hbm2ddl.auto>create</org.n52.hibernate.hbm2ddl.auto>
+				<org.n52.hibernate.hbm2ddl.auto>validate</org.n52.hibernate.hbm2ddl.auto>
 			</properties>
 		</profile>
 
