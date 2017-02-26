@@ -159,7 +159,7 @@ public class SensorInstanceProvider implements InsertSensorOfferingListener {
         SensorConfiguration sensorConfiguration = createSensorConfiguration(insertSensorOffering, sensorOffering);
         if (isSensorExisting(insertSensorOffering.getSensorInstanceData())) {
             SensorPlugin sensorPlugin = getSensorForProcedure(sensorOffering.getProcedure());
-            sensorPlugin.mergeSensorConfigurations(sensorConfiguration);
+            /*sensorPlugin.mergeSensorConfigurations(sensorConfiguration);*/
             sensorConfigurationRepository.saveOrUpdateSensorConfiguration(sensorConfiguration);
         }
         else {
