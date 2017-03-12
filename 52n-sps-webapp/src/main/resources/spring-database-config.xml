@@ -54,10 +54,14 @@
 				<value>mapping/SensorConfiguration.hbm.xml</value>
 				<value>mapping/SensorDescription.hbm.xml</value>
 				<value>mapping/SensorTask.hbm.xml</value>
+				<value>mapping/User.hbm.xml</value>
 			</list>
 		</property>
 	</bean>
 
+	<bean id="userDao" class="org.n52.sps.db.access.HibernateUserDao">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
 	<!-- ############################## JTA JAVA EE MANAGED DATASOURCE ################################## -->
 
 	<!-- 

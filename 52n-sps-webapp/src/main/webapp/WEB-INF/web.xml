@@ -58,7 +58,19 @@
 		<servlet-name>admin</servlet-name>
 		<url-pattern>/admin/*</url-pattern>
 	</servlet-mapping>
-	
+
+	<servlet>
+		<servlet-name>user</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>/WEB-INF/classes/binding-user.xml</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>user</servlet-name>
+		<url-pattern>/user/*</url-pattern>
+	</servlet-mapping>
 	<!-- protect your administration interface by using servlet container's user management -->
 <!--	<security-constraint>
 		<display-name>Please authenticate as SPS Administrator!</display-name>
@@ -82,7 +94,7 @@
 
 	<!-- landing page -->
 	<welcome-file-list>
-		<welcome-file>testClient-SPSv2.html</welcome-file>
+		<welcome-file>login.html</welcome-file>
 	</welcome-file-list>
 	 
 </web-app>

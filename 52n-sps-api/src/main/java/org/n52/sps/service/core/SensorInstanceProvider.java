@@ -88,6 +88,7 @@ public class SensorInstanceProvider implements InsertSensorOfferingListener {
     public void init() throws InternalServiceException {
         sensorPluginLoader = ServiceLoader.load(SensorInstanceFactory.class);
         if (isMissingRepository()) {
+            LOGGER.warn("SensorConfiguration or sensorTask repository missed");
             throw new IllegalStateException("SensorInstanceProvider misses a repository.");
         }
         Iterable<SensorConfiguration> configs = sensorConfigurationRepository.getSensorConfigurations();

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>Sensor Planning Service</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+</head>
+<body>
+<!--页头底图  -->
+<div class="row-fluid">
+    <div class="span12">
+        <img src="images/banner_left.jpg"/>
+        <img src="images/banner_right.jpg" align="right"/>
+    </div>
+</div>
+
+
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="container">
+
+            <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <!-- Be sure to leave the brand out there if you want it shown -->
+            <label class="brand" >SensorMap</label>
+
+            <!-- Everything you want hidden at 940px or less, place within here -->
+            <div class="nav-collapse collapse">
+                <!-- .nav, .navbar-search, .navbar-form, etc -->
+                <ul class="nav">
+                    <li class="active"><a href="#accordion2">规划服务</a></li>
+                    <li class="divider-vertical"><a href="#bb">通告服务</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- 左侧功能栏: 获取传感器信息; 获取观测信息; 获取能力信息 -->
+<div class="container-fluid" style="padding-right:10px;">
+    <div class="row-fluid">
+        <div class="span2" style="background-color: #fff;position:fix;height: 607px;">
+            <div class="accordion" id="accordion2" style="padding-top:20px;">
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2"
+                           href="#collapseFour">
+                            <i class="icon-chevron-down"></i>获取服务信息
+                        </a>
+                    </div>
+                    <div id="collapseFour" class="accordion-body collapse in">
+                        <div class="accordion-inner">
+                            <div class="input-append">
+
+                                <button type="submit" class="btn btn-info" id="GetCapa"
+                                        style="margin-top: 5px;margin-left: 20px;"><i
+                                        class="icon-ok-sign icon-white"></i>&nbsp;获取XML
+                                </button>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2"
+                           href="#collapseTwo">
+                            <i class="icon-chevron-down"></i>获取传感器信息
+                        </a>
+                    </div>
+                    <div id="collapseTwo" class="accordion-body collapse in">
+                        <div class="accordion-inner">
+                            <select class="span12" id="sensorinfoS">
+                                <option value="1">WATERNET-01</option>
+                                <option value="2">WATERNET-02</option>
+                                <option value="2">WATERNET-03</option>
+                                <option value="2">WATERNET-04</option>
+                                <option value="2">WATERNET-05</option>
+                                <option value="2">WATERNET-06</option>
+                                <option value="2">WATERNET-07</option>
+                                <option value="2">WATERNET-08</option>
+                                <option value="2">WATERNET-09</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-success" id="GetsensorInfo"
+                                style="margin-top: 5px;margin-left: 20px;"><i class=" icon-ok-sign icon-white"></i>&nbsp;获取XML
+                        </button>
+                        <br>
+                    </div>
+                </div>
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2"
+                           href="#collapseReference">
+                            <i class="icon-chevron-down"></i>SOS数据参考
+                        </a>
+                    </div>
+                    <div id="collapseReference" class="accordion-body collapse in">
+                        <div class="accordion-inner">
+
+                        </div>
+                        <button type="submit" class="btn btn-success" id="RetriveSOSReference"
+                                style="margin-top: 5px;margin-left: 20px;"><i class=" icon-ok-sign icon-white"></i>&nbsp;查询
+                        </button>
+                        <br>
+                    </div>
+                </div>
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2"
+                           href="#collapseSubmit">
+                            <i class="icon-chevron-down"></i>任务规划
+                        </a>
+                    </div>
+                    <div id="collapseSubmit" class="accordion-body collapse in">
+                        <div class="accordion-inner">
+
+                        </div>
+                        <button type="submit" class="btn btn-success" id="SubmitTask"
+                                style="margin-top: 5px;margin-left: 20px;"><i class=" icon-ok-sign icon-white"></i>&nbsp;提交任务
+                        </button>
+                        <br>
+                    </div>
+                </div>
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2"
+                           href="#collapseTaskParameter">
+                            <i class="icon-chevron-down"></i>任务参数查询
+                        </a>
+                    </div>
+                    <div id="collapseTaskParameter" class="accordion-body collapse in">
+                        <div class="accordion-inner">
+
+                        </div>
+                        <button type="submit" class="btn btn-success" id="TaskParameter"
+                                style="margin-top: 5px;margin-left: 20px;"><i class=" icon-ok-sign icon-white"></i>&nbsp;查询
+                        </button>
+                        <br>
+                    </div>
+                </div>
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2"
+                           href="#collapseGetStatus">
+                            <i class="icon-chevron-down"></i>实时任务查询
+                        </a>
+                    </div>
+                    <div id="collapseGetStatus" class="accordion-body collapse in">
+                        <div class="accordion-inner">
+
+                        </div>
+                        <button type="submit" class="btn btn-success" id="GetStatus"
+                                style="margin-top: 5px;margin-left: 20px;"><i class=" icon-ok-sign icon-white"></i>&nbsp;查询
+                        </button>
+                        <br>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 页脚 -->
+<div id="footer">
+
+</div>
+
+<br>
+
+</body>
+</html>
