@@ -33,15 +33,20 @@ import org.n52.sps.sensor.SensorPlugin;
 import org.n52.sps.sensor.model.SensorConfiguration;
 import org.n52.sps.sensor.model.SensorTask;
 import org.n52.sps.store.SensorConfigurationRepository;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class SensorConfigurationStorageService implements SensorConfigurationRepository {
-    
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(SensorConfigurationStorageService.class);
+
     private SensorConfigurationDao sensorConfigurationDao;
     
     private SensorTaskDao sensorTaskDao;
 
     public void storeNewSensorConfiguration(SensorConfiguration sensorConfiguration) {
         if (isExisting(sensorConfiguration.getProcedure())) {
+            LOGGER.warn("Sensor configuration already exists, sensor procedure = {}", sensorConfiguration.getProcedure());
             throw new DatabaseServiceException("Sensor configuration already exists!");
         };
         sensorConfigurationDao.saveInstance(sensorConfiguration);
