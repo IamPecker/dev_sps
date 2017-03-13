@@ -6,10 +6,12 @@ import org.n52.sps.user.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  * Created by xiangbaoqing on 2017/3/13.
  */
+@Transactional
 public class HibernateUserDao extends HibernateDaoSupport implements UserDao {
     private static final Logger LOGGER = LoggerFactory.getLogger(HibernateUserDao.class);
 

@@ -85,6 +85,8 @@
 	<aop:config>
 		<aop:pointcut id="configurationDaoOperation" expression="execution(* org.n52.sps.db.access.HibernateSensorConfigurationDao.*(..))" />
 		<aop:pointcut id="taskDaoOperation" expression="execution(* org.n52.sps.db.access.HibernateSensorTaskDao.*(..))" />
+		<aop:pointcut id="userDaoOperation" expression="execution(* org.n52.sps.db.access.HibernateUserDao.*(..))"/>
+		<aop:advisor advice-ref="txAdvice" pointcut-ref="userDaoOperation"/>
 		<aop:advisor advice-ref="txAdvice" pointcut-ref="configurationDaoOperation" />
 		<aop:advisor advice-ref="txAdvice" pointcut-ref="taskDaoOperation" />
 	</aop:config>
