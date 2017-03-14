@@ -1,10 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <title>register</title>
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/register.css"/>
+    <script type="text/javascript">
+        /*function play() {
+         document.getElementById("menu_item").style.display = "";
+         }
+         function noplay() {
+         document.getElementById("menu_item").style.display = "none";
+         }*/
+        function passwd() {
+            var pass = document.getElementById("password").value;
+            var tip = document.getElementById("tip");
+            if (pass.length < 4) {
+                document.getElementById("meter").value = pass.length;
+                tip.innerHTML = "差";
+            }
+            else if (pass.length <= 8) {
+                document.getElementById("meter").value = pass.length;
+                tip.innerHTML = "中";
+            }
+            else {
+                document.getElementById("meter").value = pass.length;
+                tip.innerHTML = "高";
+            }
+        }
+        function changeBgColor(btn) {
+            var btn = document.getElementById(btn);
+            btn.style.backgroundColor = "#90BFFF"
+        }
+        function recoverBgColor(btn) {
+            var btn = document.getElementById(btn);
+            btn.style.backgroundColor = "#448EF3"
+        }
+    </script>
 </head>
 <body>
-
+<div class="row-fluid">
+    <div class="span12">
+        <img src="images/banner_left.jpg"/>
+        <img src="images/banner_right.jpg"/>
+    </div>
+</div>
+<!-- <div id="3" style="position: relative; top: 100px; z-index: 3;"> -->
+<div id="3" style="position: relative; top:10px; z-index: 3;">
+    <form id="f1" action="user/register" method="post">
+        <table align="center" cellspacing="0" class="table">
+            <tr class="thead">
+                <td align="center">
+                    用户注册
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table id="registertable" border="0px" align="center" border="0px" cellspacing="0"
+                           cellpadding="5px">
+                        <tr>
+                        <tr>
+                            <td align="right">
+                                用户ID：
+                            </td>
+                            <td align="left">
+                                <input type="text" name="username" placeholder="用户名" required/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right">
+                                密 码：
+                            </td>
+                            <td align="left">
+                                <input type="password" name="password" id="password" placeholder="密码" required
+                                       onkeyup="passwd()"/>
+                                <meter min="1" max="10" low="5" high="8" value="0" id="meter">
+                                </meter>
+                                <span id="tip"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right">
+                                密码确认：
+                            </td>
+                            <td align="left">
+                                <input type="password" name="password2" placeholder="确认密码" required/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right">
+                                手 机：
+                            </td>
+                            <td align="left">
+                                <input type="tel" pattern="[0-9]{11}" id="p" name="phone" placeholder="请输入11位数字"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right">
+                                邮 箱：
+                            </td>
+                            <td align="left">
+                                <input type="email" name="email" placeholder="邮箱" id="email" required/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right">
+                                xmpp：
+                            </td>
+                            <td align="left">
+                                <input type="email" name="email" placeholder="xmpp账号" id="email" required/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right">
+                                传真：
+                            </td>
+                            <td align="left">
+                                <input type="email" name="email" placeholder="传真号" id="email" required/>
+                            </td>
+                        </tr>
+                        </tr>
+                        <td align="center" colspan="2">
+                            <input type="button" value="转到登录" onclick="window.location.replace('login.html')" id="btn1"
+                                   onmousemove="changeBgColor('btn1')" onmouseout="recoverBgColor('btn1')"
+                                   class="submit"/>
+                            <input type="submit" accesskey="enter" value="注册" id="btn"
+                                   onmousemove="changeBgColor('btn')" onmouseout="recoverBgColor('btn');" class="submit"
+                                   formmethod="post"/>
+                        </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
 </body>
 </html>

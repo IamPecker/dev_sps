@@ -33,7 +33,7 @@ public class LoginController {
         String userId = ((String) parameters.get("userId"))[0];
         String passWord = (String) parameters.get("password");*/
         String userId = request.getParameter("userId");
-        String passWord = request.getParameter("password");
+        String passWord = request.getParameter("passWord");
         response.setContentType("text/html;charset=utf-8");
         try {
             PrintWriter out = response.getWriter();
@@ -47,7 +47,7 @@ public class LoginController {
                 }
             }
             out.print("user not exist");
-            response.sendRedirect(request.getContextPath() + "/spsClient.html");
+            response.sendRedirect(request.getContextPath() + "/loginError.html");
         } catch (IOException e) {
             e.printStackTrace();
         }

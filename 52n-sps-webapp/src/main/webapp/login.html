@@ -377,16 +377,16 @@
 <body>
 <div class="container">
     <section id="content">
-        <form action="">
+        <form action="user/login" method="post">
             <h1>登录</h1>
             <div>
-                <input type="text" placeholder="UserID" required="" id="userID"/>
+                <input type="text" placeholder="UserID" required="" id="userId" name="userId"/>
             </div>
             <div>
-                <input type="password" placeholder="Password" required="" id="password"/>
+                <input type="password" placeholder="Password" required="" id="passWord" name="passWord"/>
             </div>
             <div>
-                <input type="button" value="Log in" onclick="login()"/>
+                <input type="submit" value="Log in" />
                 <a href="#">Lost your password?</a>
                 <a href="#">Register</a>
             </div>
