@@ -10,7 +10,7 @@
             </generator>
         </id>
 
-        <property name="userID" column="user_id" type="string"/>
+        <property name="userID" column="user_id" type="string" unique="true"/>
         <property name="passWord" column="pass_word" type="string"/>
         <property name="email" column="email" type="string"/>
         <property name="xmpp" column="xmpp" type="string"/>

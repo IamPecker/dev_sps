@@ -363,7 +363,7 @@
                 /*async: false,*/
                 dataType: "html",
                 success: function (data, status) {
-                   /* alert(data);*/
+                    /* alert(data);*/
 
 
                 },
@@ -375,6 +375,12 @@
     </script>
 </head>
 <body>
+<div class="row-fluid"  style="position: relative; top:10px; z-index: 3;">
+    <div class="span12">
+        <img src="images/banner_left.jpg"/>
+        <img src="images/banner_right.jpg"/>
+    </div>
+</div>
 <div class="container">
     <section id="content">
         <form action="user/login" method="post">
@@ -386,7 +392,7 @@
                 <input type="password" placeholder="Password" required="" id="passWord" name="passWord"/>
             </div>
             <div>
-                <input type="submit" value="Log in" />
+                <input type="submit" value="Log in"/>
                 <a href="#">Lost your password?</a>
                 <a href="#">Register</a>
             </div>

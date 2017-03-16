@@ -41,13 +41,14 @@ public class LoginController {
                 try {
                     response.sendRedirect(request.getContextPath() + "/spsClient.html");
                 } catch (IOException e) {
-                    LOGGER.error("Redirect acton to spsClient.html failed", e);
+                    LOGGER.error("Redirect action to spsClient.html failed", e);
                 } finally {
                     out.print("user exists");
                 }
+            } else {
+                response.sendRedirect(request.getContextPath() + "/loginError.html");
             }
-            out.print("user not exist");
-            response.sendRedirect(request.getContextPath() + "/loginError.html");
+
         } catch (IOException e) {
             e.printStackTrace();
         }

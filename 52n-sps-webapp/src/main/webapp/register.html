@@ -7,16 +7,10 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <link rel="stylesheet" type="text/css" href="css/register.css"/>
     <script type="text/javascript">
-        /*function play() {
-         document.getElementById("menu_item").style.display = "";
-         }
-         function noplay() {
-         document.getElementById("menu_item").style.display = "none";
-         }*/
         function passwd() {
-            var pass = document.getElementById("password").value;
+            var pass = document.getElementById("password1").value;
             var tip = document.getElementById("tip");
-            if (pass.length < 4) {
+            if (pass.length < 5) {
                 document.getElementById("meter").value = pass.length;
                 tip.innerHTML = "差";
             }
@@ -36,6 +30,23 @@
         function recoverBgColor(btn) {
             var btn = document.getElementById(btn);
             btn.style.backgroundColor = "#448EF3"
+        }
+        function confirmPassWord() {
+            if ("" == document.getElementById("password2").value) {
+                document.getElementById("registPasswordMsg2").innerHTML = "<font color='grey'>请确认密码。</font>";
+            }
+            //两次密码不同，就显示不同
+            if ("" != document.getElementById("password1").value
+                    && document.getElementById("password2").value != document.getElementById("password1").value) {
+                document.getElementById("password2Msg").innerHTML = "<font color='grey'>两次密码不匹配</font>";
+
+            }
+            //两次密码一样，就显示ok
+            if ("" != document.getElementById("password1").value
+                    && document.getElementById("password2").value == document.getElementById("password1").value) {
+
+                document.getElementById("password2Msg").innerHTML = "<font color='grey'>OK</font>";
+            }
         }
     </script>
 </head>
@@ -65,7 +76,7 @@
                                 用户ID：
                             </td>
                             <td align="left">
-                                <input type="text" name="username" placeholder="用户名" required/>
+                                <input type="text" name="userId" placeholder="用户名" required/>
                             </td>
                         </tr>
                         <tr>
@@ -73,7 +84,7 @@
                                 密 码：
                             </td>
                             <td align="left">
-                                <input type="password" name="password" id="password" placeholder="密码" required
+                                <input type="password" name="passWord" id="password1" placeholder="密码" required
                                        onkeyup="passwd()"/>
                                 <meter min="1" max="10" low="5" high="8" value="0" id="meter">
                                 </meter>
@@ -85,7 +96,11 @@
                                 密码确认：
                             </td>
                             <td align="left">
-                                <input type="password" name="password2" placeholder="确认密码" required/>
+                                <input type="password" name="password2" id="password2" placeholder="确认密码" required
+                                       onblur="confirmPassWord()"/>
+                                <span id="password2Msg">
+                                    <font color="yellow"></font>
+                                </span>
                             </td>
                         </tr>
                         <tr>
@@ -109,7 +124,7 @@
                                 xmpp：
                             </td>
                             <td align="left">
-                                <input type="email" name="email" placeholder="xmpp账号" id="email" required/>
+                                <input type="text" name="xmpp" placeholder="xmpp账号" id="xmpp_id" required/>
                             </td>
                         </tr>
                         <tr>
@@ -117,7 +132,7 @@
                                 传真：
                             </td>
                             <td align="left">
-                                <input type="email" name="email" placeholder="传真号" id="email" required/>
+                                <input type="text" name="fax" placeholder="传真号" id="fax_id" required/>
                             </td>
                         </tr>
                         </tr>

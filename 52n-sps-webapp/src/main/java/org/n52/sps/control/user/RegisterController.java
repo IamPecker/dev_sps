@@ -1,6 +1,7 @@
 package org.n52.sps.control.user;
 
 import org.n52.sps.service.user.UserService;
+import org.n52.sps.user.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -11,6 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Calendar;
 
 /**
  * Created by xiangbaoqing on 2017/3/13.
@@ -28,24 +30,38 @@ public class RegisterController {
 
     @RequestMapping(value = "/register", method = RequestMethod.POST)
     public void register(HttpServletRequest request, HttpServletResponse response) {
+        response.setContentType("text/html;charset=utf-8");
         String userId = request.getParameter("userId");
         String passWord = request.getParameter("passWord");
-        response.setContentType("text/html;charset=utf-8");
-        try {
-            PrintWriter out = response.getWriter();
-            if (userService.isUserValid(userId, passWord)) {
-                try {
-                    response.sendRedirect(request.getContextPath() + "/spsClient.html");
-                } catch (IOException e) {
-                    LOGGER.error("Redirect acton to spsClient.html failed", e);
-                } finally {
-                    out.print("user exists");
-                }
+        String phone = request.getParameter("phone");
+        String email = request.getParameter("email");
+        String xmpp = request.getParameter("xmpp");
+        String fax = request.getParameter("fax");
+        User user = new User();
+        user.setUserID(userId);
+        user.setPassWord(passWord);
+        user.setPhone(phone);
+        user.setEmail(email);
+        user.setXmpp(xmpp);
+        user.setFax(fax);
+        Calendar now = Calendar.getInstance();
+        user.setCreatedTime(now);
+        user.setLatestLoginTime(now);
+        user.setUpdatedTime(now);
+        if(userService.saveUser(user))
+        {
+            try {
+                response.sendRedirect(request.getContextPath()+"/spsClient.html");
+            } catch (IOException e) {
+                LOGGER.error("Redirect action to spsClient.html failed", e);
             }
-            out.print("user not exist");
-            response.sendRedirect(request.getContextPath() + "/loginError.html");
-        } catch (IOException e) {
-            e.printStackTrace();
+        } else{
+            try {
+                response.sendRedirect(request.getContextPath() + "/loginError.html");
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
+
     }
 }
